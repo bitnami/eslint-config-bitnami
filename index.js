@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
@@ -10,8 +8,8 @@ module.exports = {
     './rules/style',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'script'
+    ecmaVersion: 9,
+    sourceType: 'script',
   },
   env: {
     mocha: true,
